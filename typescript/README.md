@@ -12,7 +12,7 @@ for more information.
 
 ## Getting started
 
-`npm i @material/material-color-utilities` or `yarn add @material/material-color-utilities`
+`bun install @material/material-color-utilities` or `yarn add @material/material-color-utilities`
 
 ```typescript
 import { Hct } from "@material/material-color-utilities";

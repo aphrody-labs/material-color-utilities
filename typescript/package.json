@@ -45,15 +45,21 @@
   "scripts": {
     "build": "wireit",
     "build:ts": "wireit",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "bun run build"
   },
   "wireit": {
     "build": {
-      "dependencies": ["build:ts"]
+      "dependencies": [
+        "build:ts"
+      ]
     },
     "build:ts": {
       "command": "tsc --pretty",
-      "files": ["tsconfig.json", "**/*.ts", "!**/*.d.ts"],
+      "files": [
+        "tsconfig.json",
+        "**/*.ts",
+        "!**/*.d.ts"
+      ],
       "output": [
         ".tsbuildinfo",
         "**/*.js",
